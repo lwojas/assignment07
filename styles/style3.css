@@ -174,9 +174,9 @@ container {
      it set a new background image below */
 
 .a-spot {
-    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRqFZpVAS_ilx6FxRy_VLSQFdWpWo7eBJvQ2DTTGiXwKl5nrJkDQ");
+    background-image: url("../images/bg3.jpg");
     background-repeat: no-repeat;
-    background-size: contain;s
+    background-size: contain;
     background-position: center;
     height: 750px;
     width: 100%;
