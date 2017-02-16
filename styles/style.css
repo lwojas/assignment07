@@ -186,27 +186,6 @@ container {
 }
 
 
-/* - This resizes the height of the a-spot image 
-     when the window is 1200px wide or less */
-
-@media only screen and (max-width: 1200px) {
-    
-    .a-spot {
-        height: 500px; 
-    }
-}
-
-
-/* - This resizes the height of the a-spot image 
-    when the window is 800px wide or less */
-
-@media only screen and (max-width: 800px) {
-    .a-spot {
-        height: 300px; 
-    }
-}
-
-
 /* - This contains the text content and aligns it on screen with the top menu */
 
 #content {
@@ -236,4 +215,54 @@ container {
 p.vertical-line {
     border-left: 1px solid #535353;
     margin-bottom: 100px;
+}
+
+
+
+
+/* ------------------------------
+
+    6.0 Responsive elements
+
+   ------------------------------ */
+
+/* - This resizes the height of the a-spot image 
+     when the window is 1200px wide or less */
+
+@media only screen and (max-width: 1200px) {
+    
+    .a-spot {
+        height: 500px; 
+    }
+    
+    p.vertical-line {
+        border-left: 0px;
+    }
+
+}
+
+
+/* - Shifts the alignment of the menu left
+     when the window is 1030px wide or less */
+
+@media only screen and (max-width: 1030px) {
+    .menu-block { 
+        float: left;
+        margin-left: 0px;
+    }
+}
+
+
+/* - This resizes the height of the a-spot image 
+    when the window is 800px wide or less */
+
+@media only screen and (max-width: 800px) {
+    .a-spot {
+        height: 300px; 
+    }
+    
+    p {
+        padding-left: 0px;
+        padding-right: 50px;
+    }
 }
