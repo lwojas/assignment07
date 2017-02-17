@@ -223,6 +223,7 @@ p.vertical-line {
 button {
     width: 350px;
 	height: 60px;
+	display: block;
 	margin: 0 auto;
     margin-bottom: 100px;
     background-color: white;
