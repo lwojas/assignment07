@@ -28,7 +28,7 @@ nav {
     margin: 0 auto;
     margin-bottom: 1em;
     margin-top: 1em;
-    min-width: 360px;
+    min-width: 75%;
     padding: 0
 }
 
@@ -46,9 +46,10 @@ ul {
 /* - this is to stop the menu appearing on more than one line */
 
 .menu-block { 
-    width: auto;
-    height: 40px;
+    width: 450px;
+    height: auto;
     float: right;
+	
 }
 
 
@@ -68,22 +69,27 @@ li.left {
 
 /* - The code below sets the colors of the menu text */
 
-li a:link {
+a:link {
+	color: #000;
+}
+
+a li:link {
     text-decoration: none;
-    color: black;
+    color: #000;
     font-weight: light;
 }
 
-li a:visited {
+a:visited {
     text-decoration: none;
-    color: black;
+    color: #000;
     font-weight: light;
 }
 
 /* - This sets the color of the roll-over state (hover) */
 
-li a:hover {
+a li:hover {
     text-decoration: underline;
+	color: #000;
 }
 
 
@@ -198,7 +204,7 @@ span {
 .left-column {
     float: left;
     width: 50%;
-    min-width: 300px;
+    min-width: 250px;
     height: auto;
     margin-top: 20px;
 }
@@ -290,14 +296,21 @@ img.social-icon {
 
 /* --------- Tablet ---------*/
 
-@media only screen and (max-width: 769px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .menu-block { 
+    	widows: auto;
         float: left;
         margin-left: 0px;
     }
 	
 	nav {
 		width: 85%;
+	}
+
+	li {
+		float: left;
+        padding-left: 0px;
+        padding-right: 30px;
 	}
 	
 	.a-spot {
@@ -307,8 +320,7 @@ img.social-icon {
 	#content {
 		width: 85%;
 	}
-	
-		
+			
 	p {
 		padding-left: 0px;
 		padding-right: 40px;
@@ -320,22 +332,62 @@ img.social-icon {
 /* --------- Mobile ---------*/
 
 @media only screen and (max-width: 425px) {
-    .a-spot {
+    
+	.a-spot {
         height: 200px; 
     }
 	
+	nav {
+		margin-left: 0px;
+		width: auto;
+	}
+	
+	h1 {
+		padding-left: 20px;
+	}
+	
+	.menu-block {
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	nav a li {
+		border-top: 1px solid #000;
+		float: none;
+		padding-left: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px
+	}
+	
+	li.left {
+		padding-left: 20px;
+		border-bottom: 1px solid #000;
+	}
+
+	nav a {
+		text-decoration: none;
+	}
+	
+	nav a li:hover {
+		background-color: #000;
+		color: #fff;
+		text-decoration: none;
+	}
+	
 	.left-column {
-    	width: 100%;
+    	width: 90%;
     	padding-left: 20px;
 		padding-right: 20;
     }
     
 	#content {
-		width: 400px;
+		width: 100%;
+		margin-top: 10px;
 	}
 	
 	h3 {
 		padding-left: 20px;
+		margin-top: 20px;
 	}
 	
     p {
@@ -344,6 +396,11 @@ img.social-icon {
     }
 	
 	button {
-		width: 350px;
+		width: 90%;
+	}
+	
+	footer {
+		height: auto;
 	}
 }
+
